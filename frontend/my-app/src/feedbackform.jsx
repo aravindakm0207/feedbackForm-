@@ -60,19 +60,18 @@ const FeedbackForm = () => {
 
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center">
-      {/* Logo */}
+     
       <div className="w-[200px] h-[96px] mt-6 rounded-lg overflow-hidden mx-auto">
         <img src={Rectangle1} alt="Uniwell Logo" className="w-full h-full object-contain" />
       </div>
 
-      {/* Cafe Banner */}
       <div className="w-full mt-24 overflow-hidden rounded-bl-lg rounded-br-lg">
         <img src={Rectangle2} alt="Cafe Interior" className="w-full h-[160px] object-cover" />
       </div>
 
-      {/* Feedback Form */}
+     
       <form onSubmit={handleSubmit} className="w-full px-4 pb-4 space-y-6 max-w-[393px] mx-auto">
-        {/* Visit Frequency */}
+       
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-2">HOW OFTEN DO YOU VISIT HERE?</label>
           <select
@@ -86,7 +85,7 @@ const FeedbackForm = () => {
           </select>
         </div>
 
-        {/* Ratings */}
+       
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-2">QUALITY OF THE FOOD</label>
           {renderStars(foodRating, setFoodRating)}
@@ -102,7 +101,7 @@ const FeedbackForm = () => {
           {renderStars(overallRating, setOverallRating)}
         </div>
 
-        {/* Recommend */}
+     
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-2">WOULD YOU RECOMMEND OUR RESTAURANT?</label>
           <div className="flex space-x-4">
@@ -125,7 +124,7 @@ const FeedbackForm = () => {
           </div>
         </div>
 
-        {/* Suggestions */}
+      
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-2">YOUR SUGGESTIONS</label>
           <textarea
@@ -136,7 +135,6 @@ const FeedbackForm = () => {
           />
         </div>
 
-        {/* Follow Up */}
         <div className="flex items-center space-x-2">
           <input
             type="checkbox"
