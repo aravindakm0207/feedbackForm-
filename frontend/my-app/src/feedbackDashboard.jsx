@@ -42,20 +42,20 @@ const FeedbackDashboard = () => {
               </h2>
 
               <div className="text-sm text-gray-600 space-y-1">
-                <p>🍴 <span className="font-medium">Food Quality:</span> {fb.qualityOfFood}/5</p>
-                <p>👨‍🍳 <span className="font-medium">Service Quality:</span> {fb.serviceQuality}/5</p>
-                <p>⭐ <span className="font-medium">Overall Experience:</span> {fb.overallExperience}/5</p>
-                <p>👍 <span className="font-medium">Recommend:</span> {fb.recommend ? "Yes" : "No"}</p>
+                <p> <span className="font-medium">Food Quality:</span> {fb.qualityOfFood}/5</p>
+                <p> <span className="font-medium">Service Quality:</span> {fb.serviceQuality}/5</p>
+                <p> <span className="font-medium">Overall Experience:</span> {fb.overallExperience}/5</p>
+                <p> <span className="font-medium">Recommend:</span> {fb.recommend ? "Yes" : "No"}</p>
               </div>
 
               {fb.suggestions && (
                 <p className="mt-3 text-sm text-gray-700">
-                  💡 <span className="font-medium">Suggestion:</span> {fb.suggestions}
+                   <span className="font-medium">Suggestion:</span> {fb.suggestions}
                 </p>
               )}
 
               <p className="mt-3 text-xs text-gray-500">
-                🕒 {new Date(fb.createdAt).toLocaleString()}
+                 {new Date(fb.createdAt).toLocaleString()}
               </p>
             </div>
           ))}
